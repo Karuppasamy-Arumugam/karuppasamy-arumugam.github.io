@@ -12,7 +12,7 @@ export const initialProfile = {
   whatsapp: "919585346003",
   profileImage: "/assets/images/karuppasamy-profile.jpeg",
   heroVideo: "/assets/media/hero-intro.mp4",
-  leetcode: "https://leetcode.com/u/karuppasamy74/",
+  leetcode: "https://leetcode.com/u/KaruppasamyArumugam/",
   hackerrank: "https://www.hackerrank.com/profile/karuppasamy74",
   codechef: "",
   geeksforgeeks: "",

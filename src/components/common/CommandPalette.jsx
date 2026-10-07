@@ -29,7 +29,7 @@ export const CommandPalette = () => {
   const { codingProfiles, socials } = usePortfolioData();
 
   const githubUrl = codingProfiles.find(p => p.id === 'github')?.url || 'https://github.com/Karuppasamy-Arumugam';
-  const leetcodeUrl = codingProfiles.find(p => p.id === 'leetcode')?.url || 'https://leetcode.com/u/karuppasamy74/';
+  const leetcodeUrl = codingProfiles.find(p => p.id === 'leetcode')?.url || 'https://leetcode.com/u/KaruppasamyArumugam/';
   const hackerrankUrl = codingProfiles.find(p => p.id === 'hackerrank')?.url || 'https://www.hackerrank.com/profile/karuppasamy74';
   const linkedinUrl = socials.find(s => s.id === 'linkedin')?.url || 'https://www.linkedin.com/in/karuppasamy-arumugam/';
   const whatsappUrl = socials.find(s => s.id === 'whatsapp')?.url || 'https://wa.me/919585346003';

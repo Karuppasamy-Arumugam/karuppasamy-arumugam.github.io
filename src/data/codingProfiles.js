@@ -11,7 +11,7 @@ export const initialCodingProfiles = [
     id: "leetcode",
     name: "LeetCode",
     username: "@karuppasamy74",
-    url: "https://leetcode.com/u/karuppasamy74/",
+    url: "https://leetcode.com/u/KaruppasamyArumugam/",
     badgeText: "Algorithms & Python Data Structures",
     icon: "Code"
   },

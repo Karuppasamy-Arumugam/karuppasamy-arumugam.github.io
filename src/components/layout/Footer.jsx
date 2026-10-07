@@ -51,7 +51,7 @@ export const Footer = () => {
 
   const leetcode =
     codingProfiles.find((item) => item.id === 'leetcode')?.url ||
-    'https://leetcode.com/u/karuppasamy74/';
+    'https://leetcode.com/u/KaruppasamyArumugam/';
 
   return (
     <footer className="w-full border-t border-charcoal-200 dark:border-charcoal-800 bg-white/40 dark:bg-bg-dark/40 backdrop-blur-md transition-colors">
