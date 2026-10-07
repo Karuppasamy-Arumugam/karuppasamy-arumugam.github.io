@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background: #f5f9ff;
+  }
+
+  .dark body {
+    background: #050b14;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #7195b5;
+    border-radius: 9999px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #30495f;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2e9fff;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #59c3ff;
+  }
+
+  ::selection {
+    background-color: #2e9fff;
+    color: #ffffff;
+  }
+
+  .dark ::selection {
+    background-color: #67e8f9;
+    color: #04101d;
+  }
+}
+
+@layer components {
+  .portfolio-shell {
+    position: relative;
+    isolation: isolate;
+    background-color: #f5f9ff;
+    background-image:
+      radial-gradient(circle at 82% 8%, rgba(46, 159, 255, 0.16), transparent 28rem),
+      radial-gradient(circle at 12% 36%, rgba(201, 139, 85, 0.10), transparent 25rem),
+      linear-gradient(180deg, rgba(255,255,255,0.72), rgba(245,249,255,0.96));
+  }
+
+  .dark .portfolio-shell {
+    background-color: #050b14;
+    background-image:
+      radial-gradient(circle at 82% 8%, rgba(46, 159, 255, 0.16), transparent 30rem),
+      radial-gradient(circle at 14% 30%, rgba(103, 232, 249, 0.07), transparent 25rem),
+      radial-gradient(circle at 75% 75%, rgba(201, 139, 85, 0.05), transparent 24rem),
+      linear-gradient(180deg, #050b14 0%, #06101d 48%, #050b14 100%);
+  }
+
+  .portfolio-shell::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.22;
+    background-image:
+      linear-gradient(rgba(46, 159, 255, 0.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46, 159, 255, 0.10) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(to bottom, black, transparent 75%);
+  }
+
+  .dark .portfolio-shell::before {
+    opacity: 0.15;
+  }
+
+  .tech-card-glow {
+    box-shadow:
+      0 24px 80px rgba(5, 20, 40, 0.22),
+      0 0 0 1px rgba(89, 195, 255, 0.10),
+      0 0 48px rgba(46, 159, 255, 0.12);
+  }
+}
+
+@layer utilities {
+  .backdrop-blur-glass {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, .fixed, button, canvas, video {
+    display: none !important;
+  }
+  #printable-resume {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: white !important;
+    color: black !important;
+  }
+}

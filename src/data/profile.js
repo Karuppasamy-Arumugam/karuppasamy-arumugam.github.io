@@ -1,0 +1,32 @@
+export const initialProfile = {
+  name: "Karuppasamy A",
+  title: "Junior Full Stack Developer",
+  subtitle: "Python | React.js | Full Stack Development",
+  location: "Tenkasi, Tamil Nadu, India",
+  email: "karuppasamyarumugam05@gmail.com",
+  resumeUrl: "/assets/resume/Karuppasamy-A-Resume.pdf",
+  github: "https://github.com/Karuppasamy-Arumugam",
+  linkedin: "https://www.linkedin.com/in/karuppasamy-arumugam/",
+  naukri: "https://www.naukri.com/code360/profile/karuppasamy",
+  instagram: "https://www.instagram.com/_kitty___k?igsh=Y2J4cXJlenh5bTdj",
+  whatsapp: "919585346003",
+  profileImage: "/assets/images/karuppasamy-profile.jpeg",
+  heroVideo: "/assets/media/hero-intro.mp4",
+  leetcode: "https://leetcode.com/u/karuppasamy74/",
+  hackerrank: "https://www.hackerrank.com/profile/karuppasamy74",
+  codechef: "",
+  geeksforgeeks: "",
+  availableForWork: true,
+  availabilityStatus: "Available for Junior Full Stack Developer Opportunities",
+  heroHeading: "Building Modern, Scalable Web Applications with Python & React",
+  heroDescription: "Junior Full Stack Developer focused on building clean, performant web applications using Python, React.js, and modern full-stack technologies. Backed by practical hands-on projects, rigorous training, and a solid foundation in technical problem solving.",
+  heroRotatingTexts: [
+    "I Build Web Applications",
+    "I Work With Python",
+    "I Create React Interfaces",
+    "I Develop Full Stack Projects"
+  ],
+  aboutSummary: "I am a dedicated Junior Full Stack Developer with practical experience crafting modern web applications using Python, React.js, Django, and MySQL. With a strong background in technical problem solving from my earlier networking and ELV roles, I bring exceptional troubleshooting instincts, attention to detail, and a disciplined approach to software development.",
+  careerTransitionText: "Having completed my Diploma in Information Technology, I gained hands-on technical and systems experience in Network Engineering and ELV infrastructure. Recognizing my passion for building scalable software, I transitioned into Python Full Stack Development through intensive practical training and project building. My systems background gives me a distinct advantage in debugging, architectural thinking, and end-to-end reliability.",
+  careerFocus: "Junior Full Stack Developer with practical experience building web applications using Python, React.js, and modern full-stack technologies, supported by previous professional technical experience and strong troubleshooting skills."
+};

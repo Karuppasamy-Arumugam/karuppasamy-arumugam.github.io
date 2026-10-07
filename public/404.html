@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting</title>
+    <script>
+      const route =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+
+      sessionStorage.setItem('spa-redirect', route);
+      window.location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
