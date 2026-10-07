@@ -1302,7 +1302,7 @@ export const AdminPage = () => {
                   type="button"
                   onClick={handleResumeUpload}
                   disabled={!selectedResume || resumeUploading || !cloudConfigured}
-                  className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 text-white text-xs font-mono font-bold hover:from-brand-500 hover:to-cyan-500 transition-all shadow-md shadow-brand-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-linear-to-r from-brand-600 to-brand-500 text-white text-xs font-mono font-bold hover:from-brand-500 hover:to-cyan-500 transition-all shadow-md shadow-brand-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Save className="w-4 h-4" />
                   <span>{resumeUploading ? 'Publishing Resume...' : 'Upload & Publish Resume'}</span>
