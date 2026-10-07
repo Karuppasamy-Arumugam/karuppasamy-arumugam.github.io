@@ -9,7 +9,7 @@ export const HeroMedia = ({ profile }) => {
       initial={{ opacity: 0, x: 24 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
-      className="relative w-full max-w-[420px] h-[320px] sm:h-[400px] lg:h-[460px] mx-auto lg:ml-auto"
+      className="relative w-full max-w-105 h-80 sm:h-100 lg:h-115 mx-auto lg:ml-auto"
     >
       <div className="absolute inset-8 rounded-full bg-brand-500/20 blur-3xl pointer-events-none" />
 
@@ -17,7 +17,7 @@ export const HeroMedia = ({ profile }) => {
         <img
           src={profileImageUrl}
           alt={`${profile?.name || 'Karuppasamy'} professional portrait`}
-          className="h-full w-full object-contain object-bottom"
+          className="h-full w-full object-cover object-center"
           loading="eager"
           onError={(event) => {
             event.currentTarget.onerror = null;
